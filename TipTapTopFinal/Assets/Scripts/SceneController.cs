@@ -21,6 +21,12 @@ public class SceneController : MonoBehaviour
     public Text Multipler;
 	public AudioSource song;
 
+    public AudioSource audio;
+    public AudioClip multiplerSound;
+    private bool played;
+    private int prevMult;
+
+
 
 
 
@@ -56,7 +62,18 @@ public class SceneController : MonoBehaviour
          //multipler stuff
         if (inARow > 15)
         {
+            prevMult = multipler;
             multipler = (inARow / 15)+1;
+            
+            if(prevMult != multipler)
+                played = false;
+            if(!played){
+                audio.clip = multiplerSound;
+                audio.Play();
+                played = true;
+            }
+
+            
             Multipler.GetComponent<Text>().text = "X" + multipler;
 
         }
