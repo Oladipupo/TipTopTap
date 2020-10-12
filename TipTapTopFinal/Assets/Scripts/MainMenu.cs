@@ -5,11 +5,32 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    void Update()
+    {
+        if (Input.GetKeyDown("z"))
+        {
+            SceneManager.LoadScene("Credits");
+        }
+        if (Input.GetKeyDown("x"))
+        {
+            SceneManager.LoadScene("Setting");
+        }
+        if (Input.GetKeyDown("c"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene("level1");
     }
 
+    public void ResetGame()
+    {
+        SceneManager.LoadScene("level1");
+    }
+    
     public void BackGame()
     {
         SceneManager.LoadScene("MainMenu");
@@ -22,4 +43,5 @@ public class MainMenu : MonoBehaviour
     public void Settings(){
         SceneManager.LoadScene("Setting");
     }
+
 }
