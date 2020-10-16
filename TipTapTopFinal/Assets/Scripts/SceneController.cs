@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
@@ -20,9 +21,12 @@ public class SceneController : MonoBehaviour
     public Text endScore;
     public Text Multipler;
 	public AudioSource song;
-
+    public AudioClip loser;
     public AudioSource audio;
     public AudioClip multiplerSound;
+    public string currentLevel;
+    public string nextLevel;
+    private bool repeatLevel = false;
     private bool played;
     private int prevMult;
 
@@ -124,6 +128,9 @@ public class SceneController : MonoBehaviour
             star1.enabled = false;
             star2.enabled = false;
             star3.enabled = false;
+            repeatLevel = true;
+            song.PlayOneShot(loser,.7f);
+
         }
 
 
@@ -135,4 +142,20 @@ public class SceneController : MonoBehaviour
 
     }
 
+    public void continueIt()
+    {
+        if (repeatLevel)
+        {
+            resetGame();
+        }
+        else
+        {
+            SceneManager.LoadScene(nextLevel);
+        }
+    }
+
+    public void resetGame()
+    {
+        SceneManager.LoadScene(currentLevel);
+    }
 }
