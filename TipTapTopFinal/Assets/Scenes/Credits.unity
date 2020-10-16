@@ -965,9 +965,6 @@ MonoBehaviour:
     Oscar Mandujano
     - Game Developer
 
-    Miles Berry - Creative Writer
-
-    Lane Bentley -  Composer
 
 '
   m_isRightToLeft: 0
@@ -996,7 +993,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 43.4
+  m_fontSize: 48.85
   m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 1
