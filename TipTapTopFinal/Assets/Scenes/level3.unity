@@ -11853,7 +11853,7 @@ MonoBehaviour:
   loser: {fileID: 8300000, guid: 4e51de9c4993c4a49a5306c54806be39, type: 3}
   audio: {fileID: 871748468}
   multiplerSound: {fileID: 8300000, guid: 4317047e475e3a944a0a7ca786da1c26, type: 3}
-  currentLevel: level2
+  currentLevel: level3
   nextLevel: CutScene3
 --- !u!4 &871748467
 Transform:
