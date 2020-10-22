@@ -19,6 +19,10 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene("MainMenu");
         }
+        if (Input.GetKeyDown("v"))
+        {
+            SceneManager.LoadScene("TutorialLevel");
+        }
     }
 
     public void PlayGame()
@@ -30,7 +34,7 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("level1");
     }
-    
+
     public void BackGame()
     {
         SceneManager.LoadScene("MainMenu");
@@ -42,6 +46,10 @@ public class MainMenu : MonoBehaviour
 
     public void Settings(){
         SceneManager.LoadScene("Setting");
+    }
+
+    public void TutorialLevel(){
+        SceneManager.LoadScene("TutorialLevel");
     }
 
 }
