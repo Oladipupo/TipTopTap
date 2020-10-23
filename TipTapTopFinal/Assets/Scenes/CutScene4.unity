@@ -316,7 +316,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 79e3a7b78564e49ee925f85ed1dcf386, type: 3}
   audioSource: {fileID: 38931334}
   typingSpeed: 0.04
-  nextLevelName: MainMenu
+  nextLevelName: CutScene5
 --- !u!4 &38931333
 Transform:
   m_ObjectHideFlags: 0
