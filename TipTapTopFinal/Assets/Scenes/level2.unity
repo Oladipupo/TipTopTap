@@ -1706,7 +1706,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 280.27, y: 221.8}
+  m_AnchoredPosition: {x: 303.27, y: 221.8}
   m_SizeDelta: {x: 239.46216, y: 62.336334}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &227836844
@@ -1744,7 +1744,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'BLUE: LEFT ARROW
 
-    GREEN: UP ARROW
+    GREEN: UP/DOWN ARROW
 
     RED: RIGHT ARROW'
 --- !u!222 &227836845
@@ -5217,6 +5217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: 273
+  button2: 274
   note: {fileID: 1115169252326516082, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
   isOnTarget: 0
   sceneController: {fileID: 871748465}
@@ -15864,6 +15865,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: 276
+  button2: 0
   note: {fileID: 1115169252326516082, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
   isOnTarget: 0
   sceneController: {fileID: 871748465}
@@ -21067,6 +21069,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: 275
+  button2: 0
   note: {fileID: 1115169252326516082, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
   isOnTarget: 0
   sceneController: {fileID: 871748465}

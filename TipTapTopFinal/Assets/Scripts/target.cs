@@ -5,6 +5,7 @@ using UnityEngine;
 public class target : MonoBehaviour
 {
     public KeyCode button;
+    public KeyCode button2;
     public GameObject note;
     public bool isOnTarget;
     public GameObject sceneController;
@@ -38,7 +39,7 @@ public class target : MonoBehaviour
     {
         if (isOnTarget)
         {
-            if (Input.GetKeyDown(button))
+            if (Input.GetKeyDown(button) || Input.GetKeyDown(button2))
             {
                 //play hit
                 audioS.clip = hitTarget;
@@ -65,7 +66,7 @@ public class target : MonoBehaviour
         else
         {
             
-            if (Input.GetKeyDown(button))
+            if (Input.GetKeyDown(button) || Input.GetKeyDown(button2))
             {
                 //scale
                 elapsedTime = 0.0f;
