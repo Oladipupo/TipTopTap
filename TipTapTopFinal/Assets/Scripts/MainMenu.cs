@@ -23,6 +23,10 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene("TutorialLevel");
         }
+        if (Input.GetKeyDown("l"))
+        {
+            SceneManager.LoadScene("LevelPicker");
+        }
     }
 
     public void PlayGame()
@@ -52,4 +56,19 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("TutorialLevel");
     }
 
+    public void LevelPicker(){
+        SceneManager.LoadScene("LevelPicker");
+    }
+
+    public void Level1(){
+        SceneManager.LoadScene("level1");
+    }
+
+    public void Level2(){
+        SceneManager.LoadScene("level2");
+    }
+
+    public void Level3(){
+        SceneManager.LoadScene("level3");
+    }
 }
