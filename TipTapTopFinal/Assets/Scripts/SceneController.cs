@@ -30,6 +30,8 @@ public class SceneController : MonoBehaviour
     private bool played;
     private int prevMult;
 
+    public bool DEV = true;
+
 
 
 
@@ -45,7 +47,10 @@ public class SceneController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+       if(DEV == true && Input.GetKeyDown("space"))
+       {
+           SceneManager.LoadScene(nextLevel);
+       }
     }
 
     int findMaxScore() //this finds the max score we use it for the star system all we gotta do is give it the amount of notes
