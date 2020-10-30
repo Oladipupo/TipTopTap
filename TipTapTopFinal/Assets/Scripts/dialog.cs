@@ -17,11 +17,12 @@ public class dialog : MonoBehaviour
     public string nextLevelName;
 
 
-
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Type());
+        if(difficulty.Easy == true && nextLevelName != "CutScene5")
+            nextLevelName = nextLevelName + "_easy";
     }
 
     // Update is called once per frame
