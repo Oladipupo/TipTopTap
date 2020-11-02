@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level3_easy.unity
     guid: c8d227147a2f243409886c3f5cf266fb
+  - enabled: 1
+    path: Assets/Scenes/LevelPicker.unity
+    guid: e092afa4062bb42a18f42842f5573d30
   m_configObjects: {}
