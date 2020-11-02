@@ -3460,6 +3460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: 273
+  button2: 0
   note: {fileID: 1115169252326516082, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
   isOnTarget: 0
   sceneController: {fileID: 871748465}
@@ -9714,6 +9715,7 @@ MonoBehaviour:
   multiplerSound: {fileID: 8300000, guid: 4317047e475e3a944a0a7ca786da1c26, type: 3}
   currentLevel: level2
   nextLevel: CutScene3
+  DEV: 1
 --- !u!4 &871748467
 Transform:
   m_ObjectHideFlags: 0
@@ -10156,7 +10158,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ad0453fc63ef40c4ada69063b243edd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3bef234eb9c784669ac6ec8542bb4e20, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11596,6 +11598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: 276
+  button2: 0
   note: {fileID: 1115169252326516082, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
   isOnTarget: 0
   sceneController: {fileID: 871748465}
@@ -16704,6 +16707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: 275
+  button2: 0
   note: {fileID: 1115169252326516082, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
   isOnTarget: 0
   sceneController: {fileID: 871748465}
