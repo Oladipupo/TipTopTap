@@ -56,4 +56,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelPicker.unity
     guid: e092afa4062bb42a18f42842f5573d30
+  - enabled: 1
+    path: Assets/Scenes/MiniGame.unity
+    guid: 294cf4d9fa6b34b4db67be0b737ff6c2
+  - enabled: 1
+    path: Assets/Scenes/MiniGame2.unity
+    guid: da72c99eb75fb46d8bc6107a9e8b4df5
   m_configObjects: {}
