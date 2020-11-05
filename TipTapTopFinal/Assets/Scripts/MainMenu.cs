@@ -23,6 +23,10 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene("TutorialLevel");
         }
+        if (Input.GetKeyDown("t"))
+        {
+            PlayerPrefs.DeleteAll();
+        }
     }
 
     public void PlayGame()

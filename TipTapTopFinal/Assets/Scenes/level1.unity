@@ -5529,6 +5529,7 @@ GameObject:
   - component: {fileID: 701212774}
   - component: {fileID: 701212777}
   - component: {fileID: 701212776}
+  - component: {fileID: 701212775}
   m_Layer: 0
   m_Name: Green
   m_TagString: Untagged
@@ -5728,6 +5729,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &701212775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701212768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae8b8ba83c445bca0dbcaf80272537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneLoad: 2
 --- !u!199 &701212776
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -29708,6 +29722,7 @@ GameObject:
   - component: {fileID: 1825561393}
   - component: {fileID: 1825561392}
   - component: {fileID: 1825561397}
+  - component: {fileID: 1825561398}
   m_Layer: 0
   m_Name: noteCatcher
   m_TagString: Untagged
@@ -29902,6 +29917,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1825561398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825561391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae8b8ba83c445bca0dbcaf80272537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneLoad: 2
 --- !u!1001 &1830268361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31289,6 +31317,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
+--- !u!1 &1989535510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1115169252326516082, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
+  m_PrefabInstance: {fileID: 1989535509}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1989535511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989535510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae8b8ba83c445bca0dbcaf80272537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneLoad: 2
 --- !u!1001 &1990179850
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -20974,6 +20974,7 @@ GameObject:
   - component: {fileID: 1379283645}
   - component: {fileID: 1379283648}
   - component: {fileID: 1379283647}
+  - component: {fileID: 1379283646}
   m_Layer: 0
   m_Name: Red
   m_TagString: Untagged
@@ -21173,6 +21174,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1379283646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379283639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae8b8ba83c445bca0dbcaf80272537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneLoad: 3
 --- !u!199 &1379283647
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -30497,6 +30511,7 @@ GameObject:
   - component: {fileID: 1825561393}
   - component: {fileID: 1825561392}
   - component: {fileID: 1825561397}
+  - component: {fileID: 1825561398}
   m_Layer: 0
   m_Name: noteCatcher
   m_TagString: Untagged
@@ -30691,6 +30706,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1825561398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825561391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae8b8ba83c445bca0dbcaf80272537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneLoad: 3
 --- !u!4 &1828639886 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1115169252326516083, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
@@ -33574,6 +33602,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
+--- !u!1 &2127317363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1115169252326516082, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
+  m_PrefabInstance: {fileID: 2127317362}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2127317364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127317363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7ae8b8ba83c445bca0dbcaf80272537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneLoad: 3
 --- !u!4 &2127649257 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1115169252326516083, guid: 33fa4e6c32bb04cc898a34953f5770c3, type: 3}
