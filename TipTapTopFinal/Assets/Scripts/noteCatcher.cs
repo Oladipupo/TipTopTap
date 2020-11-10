@@ -36,14 +36,46 @@ public class noteCatcher : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        audio.clip = miss;
-        audio.Play();
+        if (other.gameObject.tag == "badNote")
+        {
+            Debug.Log("bad");
 
-        count++;
+            Destroy(other.gameObject);
 
-        Destroy(other.gameObject);
-        sceneController.GetComponent<SceneController>().updateScore(-10);
-        sceneController.GetComponent<SceneController>().inARow = 0;
+        }
+        if (other.gameObject.tag == "penguin")
+        {
+            Debug.Log("p");
+
+        }
+        if (other.gameObject.tag == "Last One")
+        {
+            StartCoroutine(delayEndGame());
+            sceneController.GetComponent<SceneController>().EndGame();
+        }
+        if (other.gameObject.tag == "note")
+        {
+            Debug.Log("else");
+            audio.clip = miss;
+            audio.Play();
+
+            count++;
+
+            Destroy(other.gameObject);
+            sceneController.GetComponent<SceneController>().updateScore(-10);
+            sceneController.GetComponent<SceneController>().inARow = 0;
+        }
+        else
+        {
+            Destroy(other.gameObject);
+
+        }
+
+
+    }
+    IEnumerator delayEndGame()
+    {
+        yield return new WaitForSeconds(5);
 
     }
 

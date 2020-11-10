@@ -25,6 +25,8 @@ public class target : MonoBehaviour
     private Vector3 scale;
 	
     private bool lastOne =false;
+    public bool badNote = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,28 +41,45 @@ public class target : MonoBehaviour
     {
         if (isOnTarget)
         {
+
             if (Input.GetKeyDown(button) || Input.GetKeyDown(button2))
             {
-                //play hit
-                audioS.clip = hitTarget;
-                audioS.Play();
-                //play sparks 
-                ps.Play();
-
-                //scale
-                elapsedTime = 0.0f;
-
-                sceneController.GetComponent<SceneController>().inARow +=1;
-
-                Destroy(currentNote.gameObject);
-                sceneController.GetComponent<SceneController>().updateScore(20);
-                isOnTarget = false;
-                if (lastOne)
+                if (badNote)
                 {
-                    StartCoroutine(delayEndGame());
-                    sceneController.GetComponent<SceneController>().EndGame();
+                    //scale
+                    elapsedTime = 0.0f;
 
+                    //play miss
+                    audioS.clip = missTarget;
+                    audioS.Play();
+                    Destroy(currentNote.gameObject);
+                    sceneController.GetComponent<SceneController>().inARow = 0;
+                    sceneController.GetComponent<SceneController>().updateScore(-5); //not sure if we want to take away points
                 }
+                else
+                {
+                    //play hit
+                    audioS.clip = hitTarget;
+                    audioS.Play();
+                    //play sparks 
+                    ps.Play();
+
+                    //scale
+                    elapsedTime = 0.0f;
+
+                    sceneController.GetComponent<SceneController>().inARow += 1;
+
+                    Destroy(currentNote.gameObject);
+                    sceneController.GetComponent<SceneController>().updateScore(20);
+                    isOnTarget = false;
+                    if (lastOne)
+                    {
+                        StartCoroutine(delayEndGame());
+                        sceneController.GetComponent<SceneController>().EndGame();
+
+                    }
+                }
+
             }
         }
         else
@@ -97,6 +116,10 @@ public class target : MonoBehaviour
 		{
 			lastOne = true;
 		}
+        if(other.gameObject.tag == "badNote")
+        {
+            badNote = true;
+        }
         isOnTarget = true;
         currentNote = other.gameObject;
 
@@ -113,6 +136,10 @@ public class target : MonoBehaviour
             sceneController.GetComponent<SceneController>().EndGame();
 
 		}
+        if (badNote)
+        {
+            badNote = false;
+        }
 
     }
 

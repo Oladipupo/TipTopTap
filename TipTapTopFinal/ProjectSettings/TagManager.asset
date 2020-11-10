@@ -6,6 +6,8 @@ TagManager:
   tags:
   - note
   - Last One
+  - badNote
+  - penguin
   layers:
   - Default
   - TransparentFX
