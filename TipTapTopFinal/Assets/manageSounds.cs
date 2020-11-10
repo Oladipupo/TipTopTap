@@ -63,7 +63,7 @@ public class manageSounds : MonoBehaviour
         if (wrong)
         {
             count = 0;
-            Debug.Log("WROMG");
+            Debug.Log("WRONG");
         }
         else
         {
@@ -101,5 +101,10 @@ public class manageSounds : MonoBehaviour
             melodyButton.interactable = false;
         }
 
+    }
+
+    public void goToMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }

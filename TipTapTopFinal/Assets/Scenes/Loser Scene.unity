@@ -383,12 +383,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textDisplay: {fileID: 1099331666}
   sentences:
-  - Hahaha I knew you could't do it
+  - Haha you lose, try again
   sentencesAudio:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 9444f9dbb163b4b2fb1b7962a30c46d3, type: 3}
   audioSource: {fileID: 38931334}
   typingSpeed: 0.04
-  nextLevelName: level1
+  nextLevelName: MainMenu
 --- !u!4 &38931333
 Transform:
   m_ObjectHideFlags: 0
@@ -2083,7 +2083,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0

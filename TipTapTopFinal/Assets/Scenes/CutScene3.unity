@@ -247,7 +247,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 60b9c4daa698d0f4f954191a118b05e5, type: 3}
   audioSource: {fileID: 38931334}
   typingSpeed: 0.04
-  nextLevelName: minigame2
+  nextLevelName: minigame2_hard
 --- !u!4 &38931333
 Transform:
   m_ObjectHideFlags: 0
