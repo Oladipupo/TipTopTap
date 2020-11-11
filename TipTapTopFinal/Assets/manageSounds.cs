@@ -29,7 +29,7 @@ public class manageSounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     public void inputNote(int note)
     {
@@ -82,11 +82,12 @@ public class manageSounds : MonoBehaviour
 
         }
         else{
+            count = 0;
             recording = true;
             offText.enabled = false;
             onText.enabled = true;
         }
-        
+
     }
     public void playMelody()
     {

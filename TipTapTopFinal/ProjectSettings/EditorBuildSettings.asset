@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGame2_hard.unity
     guid: 0b077d51752f34ada9d9943567902656
+  - enabled: 1
+    path: Assets/Scenes/Loser Scene.unity
+    guid: 3bcad4e0b41ef4f4eb95da57b5e62ab0
   m_configObjects: {}

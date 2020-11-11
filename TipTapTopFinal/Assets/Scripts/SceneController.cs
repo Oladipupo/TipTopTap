@@ -26,7 +26,9 @@ public class SceneController : MonoBehaviour
     public AudioClip multiplerSound;
     public string currentLevel;
     public string nextLevel;
+    public string loserLevel;
     private bool repeatLevel = false;
+    private bool quit = false;
     private bool played;
     private int prevMult;
 
@@ -73,7 +75,7 @@ public class SceneController : MonoBehaviour
         {
             prevMult = multipler;
             multipler = (inARow / 15)+1;
-            
+
             if(prevMult != multipler)
                 played = false;
             if(!played){
@@ -82,7 +84,7 @@ public class SceneController : MonoBehaviour
                 played = true;
             }
 
-            
+
             Multipler.GetComponent<Text>().text = "X" + multipler;
 
         }
@@ -147,12 +149,22 @@ public class SceneController : MonoBehaviour
 
     }
 
+    public void exitGame(){
+        if (repeatLevel){
+            SceneManager.LoadScene(loserLevel);
+        }
+        else{
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
+
     public void continueIt()
     {
         if (repeatLevel)
         {
             resetGame();
         }
+
         else
         {
             SceneManager.LoadScene(nextLevel);
