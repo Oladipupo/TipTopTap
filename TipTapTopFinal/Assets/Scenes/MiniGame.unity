@@ -233,7 +233,7 @@ GameObject:
   - component: {fileID: 77993710}
   m_Layer: 5
   m_Name: Button_1
-  m_TagString: Untagged
+  m_TagString: Button_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,6 +408,7 @@ MonoBehaviour:
   offText: {fileID: 1950977081}
   melodyButton: {fileID: 1825815048}
   nextLevel: level2
+  Canvas: {fileID: 0}
 --- !u!4 &100592386
 Transform:
   m_ObjectHideFlags: 0
@@ -533,7 +534,7 @@ GameObject:
   - component: {fileID: 123104937}
   m_Layer: 5
   m_Name: Button_3
-  m_TagString: Untagged
+  m_TagString: Button_3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -938,7 +939,7 @@ GameObject:
   - component: {fileID: 528259584}
   m_Layer: 5
   m_Name: Button_2
-  m_TagString: Untagged
+  m_TagString: Button_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2561,7 +2562,7 @@ RectTransform:
   m_GameObject: {fileID: 1884393914}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children: []
   m_Father: {fileID: 606142340}
   m_RootOrder: 0

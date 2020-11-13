@@ -19,6 +19,7 @@ public class manageSounds : MonoBehaviour
     public Text offText;
     public Button melodyButton;
     public string nextLevel;
+    private string buttonString;
     // Start is called before the first frame update
     void Start()
     {
@@ -93,17 +94,31 @@ public class manageSounds : MonoBehaviour
     {
         if(chances > 0)
         {
-            audioSource.clip = melody;
-            audioSource.Play();
+            StartCoroutine(waiter());
             chances--;
         }
-        if(chances <= 0)
+        if (chances <= 0)
         {
             melodyButton.interactable = false;
         }
 
     }
 
+    IEnumerator waiter(){
+
+        for(int i = 0; i < totalNotesInSequence; i++){
+                audioSource.clip = notesSounds[correct_sequence[i]];
+                audioSource.Play();
+                int x = correct_sequence[i] + 1;
+                buttonString = "Button_" + x.ToString();
+                Button buttonClick = GameObject.FindGameObjectWithTag(buttonString).GetComponent<Button>();
+                buttonClick.interactable = false;
+                yield return new WaitForSeconds(0.5f);
+                buttonClick.interactable = true;
+                yield return new WaitForSeconds(0.5f);
+            }
+       
+    }
     public void goToMainMenu()
     {
         SceneManager.LoadScene("MainMenu");

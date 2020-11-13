@@ -8,6 +8,10 @@ TagManager:
   - Last One
   - badNote
   - penguin
+  - Button_1
+  - Button_2
+  - Button_3
+  - Button_4
   layers:
   - Default
   - TransparentFX
