@@ -23,10 +23,11 @@ public class MainMenu : MonoBehaviour
         {
             SceneManager.LoadScene("TutorialLevel");
         }
-        if (Input.GetKeyDown("t"))
-        {
-            PlayerPrefs.DeleteAll();
-        }
+    }
+
+    [RuntimeInitializeOnLoadMethod]
+    static void OnRuntimeMethodLoad() {
+        PlayerPrefs.DeleteAll();
     }
 
     public void PlayGame()
