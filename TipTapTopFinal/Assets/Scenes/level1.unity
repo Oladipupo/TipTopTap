@@ -12549,7 +12549,7 @@ MonoBehaviour:
   currentLevel: level1
   nextLevel: CutScene2
   loserLevel: Loser Scene
-  DEV: 1
+  DEV: 0
 --- !u!4 &871748467
 Transform:
   m_ObjectHideFlags: 0

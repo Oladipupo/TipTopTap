@@ -32,7 +32,7 @@ public class SceneController : MonoBehaviour
     private bool played;
     private int prevMult;
 
-    public bool DEV = true;
+    public bool DEV = false;
 
 
 
