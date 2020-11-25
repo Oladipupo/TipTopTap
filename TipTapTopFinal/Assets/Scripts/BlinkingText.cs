@@ -19,7 +19,7 @@ public class BlinkingText : MonoBehaviour
         {
             text.text = "Get Ready For Some Fun!";
             yield return new WaitForSeconds(.5f);
-            text.text = "Click Anywhere to Continue!";
+            text.text = "Click HERE to Continue!";
             yield return new WaitForSeconds(.5f);
         }
     }

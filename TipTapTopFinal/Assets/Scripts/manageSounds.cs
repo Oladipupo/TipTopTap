@@ -8,13 +8,14 @@ public class manageSounds : MonoBehaviour
     public int totalNotesInSequence;
     public int[] correct_sequence= new int [5];
     public int[] input_sequence = new int [5];
-    public int chances = 2;
     private int count = 0;
     private bool wrong = false;
     private bool recording = false;
     public AudioClip[] notesSounds;
     public AudioSource audioSource;
     public AudioClip melody;
+    public AudioClip wrongSound;
+    public AudioClip wonSound;
     public Text onText;
     public Text offText;
     public Button melodyButton;
@@ -64,12 +65,18 @@ public class manageSounds : MonoBehaviour
         if (wrong)
         {
             count = 0;
-            Debug.Log("WRONG");
+            input_sequence = new int [totalNotesInSequence];
+            Debug.Log(input_sequence[0]);
+            audioSource.clip = wrongSound;
+            audioSource.Play();
+            wrong = false;
         }
         else
         {
-            Debug.Log("winner"); //Might need to add a wait on this! goes to next level too quick
-            SceneManager.LoadScene(nextLevel);
+            melodyButton.interactable = false; 
+            audioSource.clip = wonSound;
+            audioSource.Play();
+            StartCoroutine(waiterWin());  
         }
     }
 
@@ -84,6 +91,7 @@ public class manageSounds : MonoBehaviour
         }
         else{
             count = 0;
+            input_sequence = new int[totalNotesInSequence];
             recording = true;
             offText.enabled = false;
             onText.enabled = true;
@@ -92,20 +100,18 @@ public class manageSounds : MonoBehaviour
     }
     public void playMelody()
     {
-        if(chances > 0)
-        {
-            StartCoroutine(waiter());
-            chances--;
-        }
-        if (chances <= 0)
-        {
-            melodyButton.interactable = false;
-        }
-
+        recording = false;
+        offText.enabled = true;
+        onText.enabled = false;
+        StartCoroutine(waiter());     
     }
 
+    IEnumerator waiterWin(){       
+        yield return new WaitForSeconds(2.0f);
+        SceneManager.LoadScene(nextLevel);
+    }
     IEnumerator waiter(){
-
+        melodyButton.interactable = false;
         for(int i = 0; i < totalNotesInSequence; i++){
                 audioSource.clip = notesSounds[correct_sequence[i]];
                 audioSource.Play();
@@ -117,6 +123,7 @@ public class manageSounds : MonoBehaviour
                 buttonClick.interactable = true;
                 yield return new WaitForSeconds(0.5f);
             }
+        melodyButton.interactable = true;
        
     }
     public void goToMainMenu()

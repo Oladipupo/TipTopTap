@@ -135,8 +135,7 @@ public class SceneController : MonoBehaviour
             star1.enabled = false;
             star2.enabled = false;
             star3.enabled = false;
-            repeatLevel = true;
-            song.PlayOneShot(loser,.7f);
+            repeatLevel = false;
 
         }
 

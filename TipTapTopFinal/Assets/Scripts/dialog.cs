@@ -21,7 +21,7 @@ public class dialog : MonoBehaviour
     void Start()
     {
         StartCoroutine(Type());
-        if(difficulty.Easy == true && nextLevelName != "CutScene5")
+        if(difficulty.Easy == true && nextLevelName != "CutScene5" && nextLevelName != "MainMenu")
             nextLevelName = nextLevelName + "_easy";
     }
 
