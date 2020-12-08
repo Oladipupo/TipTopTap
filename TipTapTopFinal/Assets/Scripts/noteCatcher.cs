@@ -38,14 +38,12 @@ public class noteCatcher : MonoBehaviour
     {
         if (other.gameObject.tag == "badNote")
         {
-            Debug.Log("bad");
 
             Destroy(other.gameObject);
 
         }
         if (other.gameObject.tag == "penguin")
         {
-            Debug.Log("p");
 
         }
         if (other.gameObject.tag == "Last One")
@@ -55,7 +53,6 @@ public class noteCatcher : MonoBehaviour
         }
         if (other.gameObject.tag == "note")
         {
-            Debug.Log("else");
             audio.clip = miss;
             audio.Play();
 

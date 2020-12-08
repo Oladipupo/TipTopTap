@@ -66,7 +66,6 @@ public class manageSounds : MonoBehaviour
         {
             count = 0;
             input_sequence = new int [totalNotesInSequence];
-            Debug.Log(input_sequence[0]);
             audioSource.clip = wrongSound;
             audioSource.Play();
             wrong = false;

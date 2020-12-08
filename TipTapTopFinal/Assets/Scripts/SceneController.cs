@@ -32,7 +32,7 @@ public class SceneController : MonoBehaviour
     private bool played;
     private int prevMult;
 
-    public bool DEV = false;
+    private bool DEV = false;
 
 
 
@@ -42,7 +42,6 @@ public class SceneController : MonoBehaviour
     void Start()
     {
         scoreTotal = findMaxScore();
-        Debug.Log(scoreTotal);
         endGameScreen.enabled = false;
     }
 
@@ -108,7 +107,6 @@ public class SceneController : MonoBehaviour
     {
         song.Stop();
         int starAmount = scoreTotal-score;
-        Debug.Log(starAmount);
 
 
 

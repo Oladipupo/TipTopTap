@@ -6,7 +6,7 @@ using UnityEngine;
 public class MoveToNextLevel : MonoBehaviour
 {
     public int nextSceneLoad;
-
+    /*
     void Start()
     {
         nextSceneLoad = SceneManager.GetActiveScene().buildIndex + 1;
@@ -22,5 +22,5 @@ public class MoveToNextLevel : MonoBehaviour
                 PlayerPrefs.SetInt("levelAt", nextSceneLoad);
             }
         }
-    }
+    }*/
 }

@@ -62,15 +62,30 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Level1(){
-        SceneManager.LoadScene("Level1");
+        if(difficulty.Easy != true){
+            SceneManager.LoadScene("level1");
+        }
+        else{
+            SceneManager.LoadScene("level1_easy");
+        }
     }
 
     public void Level2(){
-        SceneManager.LoadScene("Level2");
+        if(difficulty.Easy != true){
+            SceneManager.LoadScene("level2");
+        }
+        else{
+            SceneManager.LoadScene("level2_easy");
+        }
     }
 
     public void Level3(){
-        SceneManager.LoadScene("Level3");
+        if(difficulty.Easy != true){
+            SceneManager.LoadScene("level3");
+        }
+        else{
+            SceneManager.LoadScene("level3_easy");
+        }
     }
 
 }

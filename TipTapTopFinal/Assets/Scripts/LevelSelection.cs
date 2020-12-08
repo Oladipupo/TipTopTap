@@ -2,21 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelSelection : MonoBehaviour
 {
     public Button[] lvlButtons;
 
+    
+
     void Start()
     {
-        int levelAt = PlayerPrefs.GetInt("levelAt", 1);
+        if(unlocked.level1Unlock){
+            lvlButtons[0].interactable = true;
+        }
+        else{
+            lvlButtons[0].interactable = false;
+        }
+        if(unlocked.level2Unlock){
+            lvlButtons[1].interactable = true;
+        }
+        else{
+            lvlButtons[1].interactable = false;
+        }
+        if(unlocked.level3Unlock){
+            lvlButtons[2].interactable = true;
+        }
+        else{
+            lvlButtons[2].interactable = false;
 
-        for (int i = 0; i < lvlButtons.Length; i++)
-        {
-            if (i + 2 > levelAt)
-            {
-                lvlButtons[i].interactable = false;
-            }
         }
     }
 }
